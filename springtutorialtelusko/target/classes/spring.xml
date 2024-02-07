@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- type bean definition for spring -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <!-- bean based configuration -->
+ <!-- bean id="unique bean id" class="It is a relative class path" -->
+	
+	<!-- annotation based configuration -->
+<!--  	<context:component-scan base-package="youtube.telusko.springtutorialtelusko"/> -->
+
+<!-- Dependency Injection : Constructor -->
+<!-- <bean id="bike" class="youtube.telusko.springtutorialtelusko.Cart">
+	<constructor-arg name="speed" value="50" type="int" />
+</bean> -->
+
+ 
+ 
+<bean id="tyre" class="youtube.telusko.springtutorialtelusko.Tyre">
+	<property name="Brand" value="MRF"/>
+	<constructor-arg type="int" value="10212"/>
+	<constructor-arg type="java.lang.String" value="medium"/>
+	<constructor-arg index="2" value="Tractor"/>
+	<constructor-arg name="brand" value="MRF"/>
+</bean>
+
+</beans>
